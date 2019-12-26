@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF0E1E86-E2FB-4EEA-AE73-AEF9A48CB1FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>abc</RootNamespace>
+    <AssemblyName>abc</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChuotChui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChuotChui.Designer.cs">
+      <DependentUpon>ChuotChui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Con dơi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Con dơi.Designer.cs">
+      <DependentUpon>Con dơi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConCho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConCho.Designer.cs">
+      <DependentUpon>ConCho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConDoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConDoi.Designer.cs">
+      <DependentUpon>ConDoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConHo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConHo.Designer.cs">
+      <DependentUpon>ConHo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConMeo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConMeo.Designer.cs">
+      <DependentUpon>ConMeo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DieuHau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DieuHau.Designer.cs">
+      <DependentUpon>DieuHau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lang\MyResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Lang\MyResource.Ger-Duc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyResource.Ger-Duc.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Lang\MyResource.Spa-TBN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyResource.Spa-TBN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChuotChui.resx">
+      <DependentUpon>ChuotChui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConCho.resx">
+      <DependentUpon>ConCho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConDoi.resx">
+      <DependentUpon>ConDoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConHo.resx">
+      <DependentUpon>ConHo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConMeo.resx">
+      <DependentUpon>ConMeo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DieuHau.resx">
+      <DependentUpon>DieuHau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lang\MyResource.cn-TQ.resx" />
+    <EmbeddedResource Include="Lang\MyResource.en-US.resx" />
+    <EmbeddedResource Include="Lang\MyResource.Fra-Phap.resx" />
+    <EmbeddedResource Include="Lang\MyResource.Ger-Duc.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyResource.Ger-Duc.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lang\MyResource.jav-NB.resx" />
+    <EmbeddedResource Include="Lang\MyResource.kor-HQ.resx" />
+    <EmbeddedResource Include="Lang\MyResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lang\MyResource.Spa-TBN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyResource.Spa-TBN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lang\MyResource.vi-VN.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multlang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vietnam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\croatia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-doctor2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Flag_of_the_United_Kingdom.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\china.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-circle-black-35897529-500-500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\japan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\germany.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\france.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
